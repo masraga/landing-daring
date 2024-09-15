@@ -8,6 +8,7 @@
   --color-white: #fff;
   --font-size-xl: 1.7rem;
   --font-size-l: 1.3rem;
+  --container-mobile: 96%;
 }
 *, html {
   box-sizing: border-box;
@@ -26,6 +27,12 @@ body::after {
   top: 0;
   content: '';
   z-index: -1;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  margin: 5px 0;
+  background-color: var(--color-black-600);
 }
 .btn {
   outline: none;
@@ -193,6 +200,12 @@ header>.right::after{
   display: flex;
   justify-content: space-between;
 }
+.materi>div:first-child{
+  width: 45%;
+}
+.materi>div:last-child {
+  width: 50%;
+}
 .materi>div:first-child>.title{
   padding-bottom: 35px;
 }
@@ -201,18 +214,105 @@ header>.right::after{
   display: flex;
   gap: 10px;
 }
-.materi>div:first-child>div:not(:first-child)>.order {
+.materi>div:first-child>div:not(:first-child)>.order{
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.materi>div:first-child>div:not(:first-child)>.order::before {
   background-color: var(--color-black-600);
-  padding: 9px 10px;
+  content: '';
+  position: absolute;
+  left: -6px;
+  right: 0;
+  top: -5px;
+  z-index: -1;
+  padding: 15px;
   border-radius: 100%;
 }
 .materi>div:first-child>div:not(:first-child)>.text {
   margin-top: 7px;
 }
-.materi>div:last-child{
-  width: 50%;
-}
 .materi>div:last-child>.paper {
   padding: 20px;
   width: 100%;
+}
+footer {
+  margin-top: 220px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:780px) {
+  .container {
+    width: 98%;
+  }
+  header {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    width: var(--container-mobile);
+    margin: 0 auto;
+  }
+  header>.left {
+    display: flex;
+    gap: 15px;
+    left: 0;
+  }
+  header>.left>.menu>li {
+    display: inline;
+    margin: 0 2px;
+  }
+  header>.right>.ads{
+    margin-top: 40px;
+    margin: 0;
+  }
+  header>.right>.ads>img {
+    display: block;
+    max-width: 100%;
+    display: none;
+    z-index: 3;
+    position: relative;
+  }
+  header>.right::after{
+    content: '';
+    position: relative;
+  }
+  .ads-text {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    top: 80px;
+    left: 0;
+    right: 0;
+    line-height: 3rem;
+    width: var(--container-mobile);
+    margin: 0 auto;
+  }
+  .benefit {
+    display: block;
+    gap: 0;
+    margin-top: 120px;
+  }
+  .materi {
+    display: block;
+    width: var(--container-mobile);
+    margin: 0 auto;
+  }
+  .benefit>.paper{
+    margin-bottom: 25px;
+  }
+  .materi>div:first-child>.title{
+    text-align: center;
+  }
+  .materi>div:first-child{
+    width: var(--container-mobile);
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .materi>div:last-child {
+    width: var(--container-mobile);
+    margin: 0 auto;
+  }
 }

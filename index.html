@@ -16,9 +16,9 @@
         <img src="./assets/images/logo.png" width="35" alt="">
       </div>
       <ul class="menu">
-        <li><a href="">BENEFIT</a></li>
-        <li><a href="">TENTANG</a></li>
-        <li><a href="">GABUNG SEKARANG</a></li>
+        <li><a href="javascript:void(0)" konimate-scroll=".benefit">BENEFIT</a></li>
+        <li><a href="javascript:void(0)" konimate-scroll=".materi">TENTANG</a></li>
+        <li><a href="javascript:void(0)" konimate-scroll=".materi">GABUNG SEKARANG</a></li>
       </ul>
     </div>
     <div class="right">
@@ -31,17 +31,17 @@
     Belajar online makin seru dengan mentor berpengalaman
   </h2>
   <section class="container benefit">
-    <div class="paper">
+    <div class="paper" konimate-type="fade-up" konimate-delay=".1s">
       <img src="./assets/images/terstuktur.svg" alt="">
       <div class="text-uppercase font-weight-500 text-xl">Terstruktur</div>
       <div class="font-text text-black-400">Diajarkan dari tahap dasar hingga tingkat lanjut, sesuai kemampuan kamu.</div>
     </div>
-    <div class="paper">
+    <div class="paper" konimate-type="fade-up" konimate-delay=".2s">
       <img src="./assets/images/komunitas.svg" alt="">
       <div class="text-uppercase font-weight-500 text-xl">Komunitas</div>
       <div class="font-text text-black-400">Komunitas yang besar, memungkinkan kamu berkembang dengan cepat.</div>
     </div>
-    <div class="paper">
+    <div class="paper" konimate-type="fade-up" konimate-delay=".3s">
       <img src="./assets/images/uptodate.svg" alt="">
       <div class="text-uppercase font-weight-500 text-xl">Up to Date</div>
       <div class="font-text text-black-400">Materi akan terus diupdate, sesuai dengan kebutuhan industri saat ini.</div>
@@ -51,23 +51,23 @@
   <section class="container materi">
     <div>
       <div class="title text-white font-weight-500 text-xl">Materi: manajemen stok barang</div>
-      <div>
+      <div konimate-type="fade-right">
         <div class="order font-weight-bold text-white">01</div>
         <div class="text font-text text-black-400">Membuat struktur folder dengan pattern di laravel</div>
       </div>
-      <div>
+      <div konimate-type="fade-right" konimate-delay=".1s">
         <div class="order font-weight-bold text-white">02</div>
         <div class="text font-text text-black-400">Pengenalan migrasi & modeling database dilaravel</div>
       </div>
-      <div>
+      <div konimate-type="fade-right" konimate-delay=".2s">
         <div class="order font-weight-bold text-white">03</div>
         <div class="text font-text text-black-400">Slicing template HTML biasa ke blade template</div>
       </div>
-      <div>
+      <div konimate-type="fade-right" konimate-delay=".3s">
         <div class="order font-weight-bold text-white">04</div>
         <div class="text font-text text-black-400">Aplikasi manajemen stok dilaravel</div>
       </div>
-      <div>
+      <div konimate-type="fade-right" konimate-delay=".4s">
         <div class="order font-weight-bold text-white">05</div>
         <div class="text font-text text-black-400">Pengenalan unit test pada aplikasi</div>
       </div>
@@ -93,6 +93,12 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="separator"></div>
+    <div class="container">
+      <div class="text-black-400 text-center">Daring by <a class="text-primary" href="https://koderpedia.com">koderpedia</a></div>
+    </div>
+  </footer>
 
 <script src="./assets/vendor/konimate/konimate.js"></script>
 </body>
