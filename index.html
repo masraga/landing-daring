@@ -3,9 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Daring - aplikasi belajar online</title>
 </head>
 <body>
-  
+  <header>
+    <div class="left">
+      <div class="logo">
+        <img src="./assets/images/logo.png" width="35" alt="">
+      </div>
+      <ul class="menu">
+        <li><a href="">BENEFIT</a></li>
+        <li><a href="">TENTANG</a></li>
+        <li><a href="">GABUNG SEKARANG</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="ads">
+        <img src="assets/images/ads.png" alt="">
+      </div>
+    </div>
+  </header>
+  <h2 class="ads-text" konimate-type="typing">
+    Belajar online makin seru dengan mentor berpengalaman
+  </h2>
+  <section class="container benefit">
+    <div class="paper">
+      <img src="./assets/images/terstuktur.svg" alt="">
+      <div class="text-uppercase font-weight-500 text-xl">Terstruktur</div>
+      <div class="font-text text-black-400">Diajarkan dari tahap dasar hingga tingkat lanjut, sesuai kemampuan kamu.</div>
+    </div>
+    <div class="paper">
+      <img src="./assets/images/komunitas.svg" alt="">
+      <div class="text-uppercase font-weight-500 text-xl">Komunitas</div>
+      <div class="font-text text-black-400">Komunitas yang besar, memungkinkan kamu berkembang dengan cepat.</div>
+    </div>
+    <div class="paper">
+      <img src="./assets/images/uptodate.svg" alt="">
+      <div class="text-uppercase font-weight-500 text-xl">Up to Date</div>
+      <div class="font-text text-black-400">Materi akan terus diupdate, sesuai dengan kebutuhan industri saat ini.</div>
+    </div>
+  </section>
+
+  <section class="container materi">
+    <div>
+      <div class="title text-white font-weight-500 text-xl">Materi: manajemen stok barang</div>
+      <div>
+        <div class="order font-weight-bold text-white">01</div>
+        <div class="text font-text text-black-400">Membuat struktur folder dengan pattern di laravel</div>
+      </div>
+      <div>
+        <div class="order font-weight-bold text-white">02</div>
+        <div class="text font-text text-black-400">Pengenalan migrasi & modeling database dilaravel</div>
+      </div>
+      <div>
+        <div class="order font-weight-bold text-white">03</div>
+        <div class="text font-text text-black-400">Slicing template HTML biasa ke blade template</div>
+      </div>
+      <div>
+        <div class="order font-weight-bold text-white">04</div>
+        <div class="text font-text text-black-400">Aplikasi manajemen stok dilaravel</div>
+      </div>
+      <div>
+        <div class="order font-weight-bold text-white">05</div>
+        <div class="text font-text text-black-400">Pengenalan unit test pada aplikasi</div>
+      </div>
+    </div>
+    <div>
+      <div class="paper">
+        <div class="title text-white text-center font-weight-500 text-l">DAFTAR SEKARANG</div>
+        <form action="">
+          <div class="form-group">
+            <label class="text-white" for="">Email</label>
+            <input type="email" class="form-control" required name="email">
+          </div>
+          <div class="form-group">
+            <label class="text-white" for="">Password</label>
+            <input type="password" class="form-control" required name="password">
+          </div>
+          <div class="form-group">
+            <label class="text-white" for="">Nama</label>
+            <input type="text" class="form-control" required name="nama">
+          </div>
+          <button type="submit" class="btn">GABUNG SEKARANG</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<script src="./assets/vendor/konimate/konimate.js"></script>
 </body>
 </html>
